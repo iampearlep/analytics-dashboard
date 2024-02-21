@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import Sidebar from "@/components/Sidebar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Analytics Dashboard",
@@ -17,9 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-     <main>
+   <div className="flex h-screen w-full bg-[#fafafa]">
+      <div className="hidden md:block">
+      <Sidebar />
+      </div>
+     <main className="flex flex-col w-full md:ml-24">
      {children}
      </main>
+   </div>
         </body>
     </html>
   );
