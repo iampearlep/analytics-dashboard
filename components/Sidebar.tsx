@@ -7,11 +7,10 @@ import UsersIcon from '@/public/images/users.svg'
 import BoxIcon from '@/public/images/box.svg'
 import DiscountIcon from '@/public/images/discount.svg'
 import InfoIcon from '@/public/images/info.svg'
-import LightIcon from '@/public/images/light.svg'
-import DarkIcon from '@/public/images/dark.svg'
 import PlansIcon from '@/public/images/plans.svg'
 import SettingsIcon from '@/public/images/settings.svg'
 import LogoutIcon  from '@/public/images/logout.svg'
+import ThemeSwitcher from './ThemeSwitcher'
 
 
 
@@ -45,14 +44,7 @@ const Sidebar = () => {
     <div className=''>
       <Image src={InfoIcon} height={20} width={16} alt='' className='w-full h-full' />
     </div>
-    <div className='py-4 px-2 rounded-full shadow-lg flex flex-col gap-y-3'>
-    <div className=''>
-      <Image src={LightIcon} height={20} width={16} alt='' className='w-full h-full' />
-    </div>
-    <div className=''>
-      <Image src={DarkIcon} height={20} width={16} alt='' className='w-full h-full' />
-    </div>
-    </div>
+    <ThemeSwitcher />
     </div>
     <div>
     <div className=''>
