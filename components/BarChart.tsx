@@ -26,14 +26,23 @@ import {
         x: {
             grid: {
                display: false,
+              },
+              border:{
+                display: false,
               }
           },
           y: {
             display: true,
+            border:{
+                dash: [6, 4],
+            },
             beginAtZero: true,
             ticks: {
               stepSize: 10000,
             },
+            grid:{
+                drawTicks: false,
+            }
           },
       },
     plugins: {
@@ -59,7 +68,7 @@ import {
         barThickness: 30,
         borderRadius: {topLeft: 15, topRight: 15},
         maxBarThickness: 38,
-        minBarLength: 10,
+        minBarLength: 25,
         data: [6000, 21000, 3000, 27000, 9000, 45000, 9000, 25000, 4000, 32000, 22000, 30000, 50000],
         backgroundColor: '#d8f5ee',
         hoverBackgroundColor: '#34caa5',
