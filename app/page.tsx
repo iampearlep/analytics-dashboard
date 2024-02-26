@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Trends from "@/components/Trends";
 import Users from "@/components/Users";
 import Boxes from "@/components/Boxes";
-import Discount from "@/components/Discount";
+import TopPlatform from "@/components/TopPlatform";
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col md:w-5/12 gap-y-4">
         <div>
-          <Discount />
+          <TopPlatform />
           </div>
         </div>
       </div>
