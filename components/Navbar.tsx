@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div className='bg-[#fafafa] text-black w-full mx-auto border-b '>
-      <div className='flex flex-row items-center justify-between py-5 px-6'>
+      <div className='flex flex-row items-center justify-between py-5 px-3 md:px-6'>
         <div className=''>
           <h1 className='text-2xl font-semibold'>Dashboard</h1>
         </div>

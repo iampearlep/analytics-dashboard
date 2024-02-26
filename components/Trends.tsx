@@ -29,7 +29,7 @@ const Trends = () => {
         }
        </div>
         </div>
-    <div className='h-[336px] flex justify-center items-center'>
+    <div className='md:h-[336px] flex justify-center items-center'>
         <BarChart />
     </div>
   </div>

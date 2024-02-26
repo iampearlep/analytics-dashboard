@@ -2,7 +2,7 @@ import React from 'react'
 
 const TopPlatform = () => {
   return (
-    <div className='bg-white w-full h-[450px] rounded-lg border border-[#e2e4e4] '>
+    <div className='bg-white w-full md:h-[450px] rounded-lg border border-[#e2e4e4] '>
     <div className='px-4 py-4'>
       <div className='flex flex-row justify-between items-center pb-5'>
         <h2 className='text-base font-semibold'>Top Platform</h2>
