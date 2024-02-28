@@ -75,8 +75,8 @@ import {
   };
 const MobileBarChart = () => {
   return (
-    <div>
-     <Bar options={options} data={data} />
+    <div className='w-full'>
+     <Bar width={400} options={options} data={data} />
     </div>
   )
 }
