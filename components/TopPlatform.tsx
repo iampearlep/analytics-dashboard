@@ -14,7 +14,7 @@ const TopPlatform = () => {
         <div className="bg-[#6160dc] h-2.5 rounded-full dark:bg-[#6160dc]" style={{width: "70%"}}></div>
       </div>
       <div className='flex flex-row justify-between items-center font-light'>
-        <p>%2,500,000</p>
+        <p>$2,500,000</p>
         <p>+15%</p>
       </div>
       </div>

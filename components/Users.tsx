@@ -19,10 +19,10 @@ const Users = () => {
     <table className="w-full text-xs md:text-sm text-left rtl:text-right">
         <thead className="text-xs uppercase">
             <tr>
-                <th scope="col" className="text-[#a5a4ae] pl-2 pr-4  py-3">
+                <th scope="col" className="text-[#a5a4ae] pr-6  py-3">
                    Name
                 </th>
-                <th scope="col" className="text-[#a5a4ae] px-6 md:px-3 py-3">
+                <th scope="col" className="text-[#a5a4ae] px-6 py-3">
                     Date
                 </th>
                 <th scope="col" className="text-[#a5a4ae] px-6 py-3">
@@ -42,7 +42,7 @@ const Users = () => {
                      <Image src={ProfileImg1} height={10} width={8} alt='' className='w-6 h-6' />
                      <h4>Marcus Bergson</h4> 
                 </th>
-                <td className="text-[#958d89] px-6 md:px-3 py-4">
+                <td className="text-[#958d89] px-6 py-4">
                 Nov 15, 2023
                 </td>
                 <td className="px-6 py-4">
@@ -63,7 +63,7 @@ const Users = () => {
                      <Image src={ProfileImg2} height={10} width={8} alt='' className='w-6 h-6' />
                       <h4>Cooper Press</h4> 
                 </th>
-                <td className="text-[#958d89] px-6 md:px-3 py-4">
+                <td className="text-[#958d89] px-6 py-4">
                 Nov 15, 2023
                 </td>
                 <td className="px-6 py-4">
@@ -84,7 +84,7 @@ const Users = () => {
                      <Image src={ProfileImg3} height={10} width={8} alt='' className='w-6 h-6' />
                       <h4>Corey Schleifer</h4> 
                 </th>
-                <td className="text-[#958d89] px-6 md:px-3 py-4">
+                <td className="text-[#958d89] px-6 py-4">
                 Nov 14, 2023
                 </td>
                 <td className="px-6 py-4">
@@ -105,7 +105,7 @@ const Users = () => {
                      <Image src={ProfileImg4} height={10} width={8} alt='' className='w-6 h-6' />
                       <h4>Jaydon Vaccaro</h4> 
                 </th>
-                <td className="text-[#958d89] px-6 md:px-3 py-4">
+                <td className="text-[#958d89] px-6 py-4">
                 Nov 14, 2023
                 </td>
                 <td className="px-6 py-4">
@@ -126,7 +126,7 @@ const Users = () => {
                      <Image src={ProfileImg5} height={10} width={8} alt='' className='w-6 h-6' />
                       <h4>Phillip Lubin</h4> 
                 </th>
-                <td className="text-[#958d89] px-6 md:px-3 py-4">
+                <td className="text-[#958d89] px-6 py-4">
                 Nov 13, 2023
                 </td>
                 <td className="px-6 py-4">
