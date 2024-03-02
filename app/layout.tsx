@@ -25,7 +25,7 @@ export default function RootLayout({
         enableSystem={false}
         disableTransitionOnChange
         >
-   <div className="flex h-screen w-full bg-[#fafafa]">
+   <div className="flex h-screen w-full bg-[#fafafa] dark:bg-[#111827]">
       <div className="hidden md:block">
       <Sidebar />
       </div>

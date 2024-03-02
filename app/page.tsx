@@ -6,7 +6,7 @@ import TopPlatform from "@/components/TopPlatform";
 
 export default function Home() {
   return (
-    <main className="bg-[#fafafa]">
+    <main className="bg-[#fafafa] dark:bg-[#111827]">
       <Navbar />
     <div className="px-3 md:px-6 py-10">
       <div className="flex flex-col gap-y-5">

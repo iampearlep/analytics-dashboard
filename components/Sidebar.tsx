@@ -18,7 +18,7 @@ import ThemeSwitcher from './ThemeSwitcher'
 
 const Sidebar = () => {
   return (
-  <div className=' bg-[#f7f8fa] fixed top-0 left-0 h-screen w-24 z-10 border-r border-[#e2e4e4]'>
+  <div className='bg-[#f7f8fa] dark:bg-[#111827] fixed top-0 left-0 h-screen w-24 z-10 border-r border-[#e2e4e4] dark:border-[#495260]'>
   <div className='px-6 py-6 flex flex-col justify-center gap-y-10 items-center text-center'>
     <div>
     <div className='pt-1'>

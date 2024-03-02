@@ -5,7 +5,7 @@ import NotificationsIcon from '@/public/images/notifications.svg'
 import { Calendar } from "@/components/ui/calendar"
 import Profile from '@/public/images/Profile.svg'
 import Input from './ui/Input'
-import { CalendarIcon, ChevronDownIcon, Cross1Icon, HamburgerMenuIcon, BellIcon } from '@radix-ui/react-icons'
+import { CalendarIcon, ChevronDownIcon, Cross1Icon, HamburgerMenuIcon } from '@radix-ui/react-icons'
 import Link from "next/link";
 import DashboardIcon from '@/public/images/dashboard.svg'
 import TrendsIcon from '@/public/images/trends-up.svg'
@@ -19,6 +19,7 @@ import PlansIcon from '@/public/images/plans.svg'
 import SettingsIcon from '@/public/images/settings.svg'
 import LogoutIcon from '@/public/images/logout.svg'
 import ThemeSwitcher from './ThemeSwitcher'
+import { BellIcon } from 'lucide-react'
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false)
@@ -31,7 +32,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='bg-[#fafafa] text-black w-full mx-auto border-b '>
+    <div className='bg-[#fafafa] dark:bg-[#111827] text-black dark:text-white w-full mx-auto border-b dark:border-[#495260]'>
       <div className='flex flex-row items-center justify-between py-5 px-3 md:px-6'>
         <div className=''>
           <h1 className='text-2xl font-semibold'>Dashboard</h1>
@@ -42,30 +43,31 @@ const Navbar = () => {
             <Input />
           </div>
           <div className='relative'>
-           <button  onClick={() => setIsOpen(!isOpen)} className='px-4 py-2 hover:bg-[#e2e4e4] rounded-full flex flex-row items-center justify-center gap-x-1'>
+           <button  onClick={() => setIsOpen(!isOpen)} className='px-4 py-2 hover:bg-[#e2e4e4] dark:hover:dark:bg-[#1a253b] rounded-full flex flex-row items-center justify-center gap-x-1'>
            <CalendarIcon />
             <p className='text-sm'>November 15 2023</p>
            </button>
           {isOpen && 
-            <div className='absolute -ml-12 bg-white shadow-xl mt-3 rounded-md'>
+            <div className='absolute z-10 -ml-12 bg-white  dark:bg-[#1a253b] shadow-xl mt-3 rounded-md'>
             <Calendar />
           </div>
           }
           </div>
           <div>
             <div className=''>
-              <button onClick={() => setIsClicked(!isClicked)}>
-              <Image src={NotificationsIcon} height={14} width={12} alt='' className='w-full h-full' />
+              <button onClick={() => setIsClicked(!isClicked)} className='flex px-2 py-2 justify-center items-center rounded-full border border-[#e2e4e4] dark:border-[#495260]'>
+              <BellIcon className='w-4 h-4' />
+              {/* <Image src={NotificationsIcon} height={14} width={12} alt='' className='w-full h-full' /> */}
               </button>
               {isClicked && 
-              <div className='absolute -ml-20 bg-white shadow-lg text-sm py-4 px-4 mt-3 rounded-md'>
+              <div className='absolute -ml-20 bg-white dark:bg-[#1a253b] dark:text-white shadow-lg text-sm py-4 px-4 mt-3 rounded-md'>
               <p>You have no notifications yet...</p>
             </div>
               }
             </div>
           </div>
           <div className='relative'>
-            <button onClick={() => setOpen(!open)} className='flex flex-row px-2 py-2 justify-between items-center rounded-full border border-[#e2e4e4] gap-x-2'>
+            <button onClick={() => setOpen(!open)} className='flex flex-row px-2 py-2 justify-between items-center rounded-full border border-[#e2e4e4] dark:border-[#495260] gap-x-2'>
               <div>
                 <Image src={Profile} height={14} width={12} alt='' className='w-full h-full' />
               </div>
@@ -79,7 +81,7 @@ const Navbar = () => {
             </button>
          {open && 
             <div className='absolute w-full'>
-            <div className='bg-white px-1 rounded-md w-9/12 py-2 my-1 shadow-xl mx-auto'>
+            <div className='bg-white dark:bg-[#1a253b] dark:text-white px-1 rounded-md w-9/12 py-2 my-1 shadow-xl mx-auto'>
              <h5 className='text-sm font-semibold py-1 px-2'>My Account</h5>
              <hr />
             <ul className='py-1 text-xs flex flex-col'>
@@ -106,10 +108,10 @@ const Navbar = () => {
           </div>
           {isToggle && (
             <div
-              className="fixed top-0 right-0 h-full w-2/12 bg-white z-10 flex flex-col justify-start items-start "
+              className="fixed top-0 right-0 h-full w-2/12 bg-white dark:bg-[#111827] z-10 flex flex-col justify-start items-start "
             >
               <button onClick={handleToggle} className="absolute top-5 right-5">
-                <Cross1Icon className="w-6 h-6" />
+                <Cross1Icon className="w-5 h-5" />
               </button>
               <div className="mt-20 max-h-screen overflow-y-auto w-full">
                 <div className='px-2 pb-2 flex flex-col justify-center gap-y-5 items-center text-center'>
@@ -118,30 +120,30 @@ const Navbar = () => {
                   <Image src={Profile} height={10} width={8} alt='' className='w-6 h-6' />
                 </div>
                 <div className='px-2 py-2 flex flex-col justify-center gap-y-5 items-center text-center'>
-                  <div>
+                  <div className='flex flex-col items-center justify-center'>
                     <div className=''>
-                      <Image src={DashboardIcon} height={20} width={16} alt='' className='w-full h-full' />
+                      <Image src={DashboardIcon} height={20} width={16} alt='' className='w-10 h-full' />
                     </div>
                     <div className=''>
-                      <Image src={TrendsIcon} height={20} width={16} alt='' className='w-full h-full' />
+                      <Image src={TrendsIcon} height={20} width={16} alt='' className='w-10 h-full' />
                     </div>
                     <div className=''>
-                      <Image src={UsersIcon} height={20} width={16} alt='' className='w-full h-full' />
+                      <Image src={UsersIcon} height={20} width={16} alt='' className='w-10 h-full' />
                     </div>
                     <div className=''>
-                      <Image src={BoxIcon} height={20} width={16} alt='' className='w-full h-full' />
+                      <Image src={BoxIcon} height={20} width={16} alt='' className='w-10 h-full' />
                     </div>
                     <div className=''>
-                      <Image src={DiscountIcon} height={20} width={16} alt='' className='w-full h-full' />
+                      <Image src={DiscountIcon} height={20} width={16} alt='' className='w-10 h-full' />
                     </div>
                     <div className=''>
-                      <Image src={InfoIcon} height={20} width={16} alt='' className='w-full h-full' />
+                      <Image src={InfoIcon} height={20} width={16} alt='' className='w-10 h-full' />
                     </div>
                    <ThemeSwitcher />
                   </div>
                   <div>
                     <div className=''>
-                      <Image src={SettingsIcon} height={20} width={16} alt='' className='w-full h-full' />
+                      <Image src={SettingsIcon} height={20} width={16} alt='' className='w-10 h-full' />
                     </div>
                   </div>
                 </div>

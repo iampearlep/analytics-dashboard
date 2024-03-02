@@ -14,7 +14,7 @@ const Boxes = () => {
   return (
     <div>
     <div className='grid grid-cols-2 gap-2 md:gap-4'>
-        <div className='bg-[#ffffff] hover:bg-[#e6f9f4] hover:ease-linear rounded-lg border border-[#e2e4e4] px-4 py-4' >
+        <div className='bg-[#ffffff] dark:bg-[#1a253b]  hover:bg-[#e6f9f4] hover:ease-linear rounded-lg border border-[#e2e4e4] dark:border-[#495260] px-4 py-4' >
             <div className='flex flex-row justify-between items-center'>
            <div>
            <Image src={OrderIcon} height={10} width={8} alt='' className='w-7 h-7 md:w-full md:h-full' />
@@ -35,7 +35,7 @@ const Boxes = () => {
                <div><p className='text-xs md:text-sm'>vs. previous month</p></div>
             </div>
         </div>
-        <div className='bg-[#ffffff] hover:bg-[#e6f9f4] hover:ease-linear rounded-lg border border-[#e2e4e4] px-4 py-4' >
+        <div className='bg-[#ffffff] dark:bg-[#1a253b]  hover:bg-[#e6f9f4] hover:ease-linear rounded-lg border border-[#e2e4e4] dark:border-[#495260] px-4 py-4' >
             <div className='flex flex-row justify-between items-center'>
            <div>
            <Image src={RefundIcon} height={10} width={8} alt='' className='w-7 h-7 md:w-full md:h-full' />
@@ -56,7 +56,7 @@ const Boxes = () => {
                <div><p className='text-xs md:text-sm'>vs. previous month</p></div>
             </div>
         </div>
-        <div className='bg-[#ffffff] hover:bg-[#e6f9f4] hover:ease-linear rounded-lg border border-[#e2e4e4] px-4 py-4' >
+        <div className='bg-[#ffffff] dark:bg-[#1a253b]  hover:bg-[#e6f9f4] hover:ease-linear rounded-lg border border-[#e2e4e4] dark:border-[#495260] px-4 py-4' >
             <div className='flex flex-row justify-between items-center'>
            <div>
            <Image src={RefundIcon} height={10} width={8} alt='' className='w-7 h-7 md:w-full md:h-full' />
@@ -77,7 +77,7 @@ const Boxes = () => {
                <div><p className='text-xs md:text-sm'>vs. previous month</p></div>
             </div>
         </div>
-        <div className='bg-[#ffffff] hover:bg-[#e6f9f4] hover:ease-linear rounded-lg border border-[#e2e4e4] px-4 py-4' >
+        <div className='bg-[#ffffff] dark:bg-[#1a253b]  hover:bg-[#e6f9f4] hover:ease-linear rounded-lg border border-[#e2e4e4] dark:border-[#495260] px-4 py-4' >
             <div className='flex flex-row justify-between items-center'>
            <div>
            <Image src={IncomeIcon} height={10} width={8} alt='' className='w-7 h-7 md:w-full md:h-full' />

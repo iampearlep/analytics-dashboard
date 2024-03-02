@@ -2,7 +2,7 @@ import React from 'react'
 
 const TopPlatform = () => {
   return (
-    <div className='bg-white w-full md:h-[450px] rounded-lg border border-[#e2e4e4] '>
+    <div className='bg-white dark:bg-[#1a253b] w-full md:h-[450px] rounded-lg border border-[#e2e4e4] dark:border-[#495260]'>
     <div className='px-4 py-4'>
       <div className='flex flex-row justify-between items-center pb-5'>
         <h2 className='text-base font-semibold'>Top Platform</h2>
@@ -13,7 +13,7 @@ const TopPlatform = () => {
       <div className="w-full bg-gray-200 rounded-full h-2.5 ">
         <div className="bg-[#6160dc] h-2.5 rounded-full dark:bg-[#6160dc]" style={{width: "70%"}}></div>
       </div>
-      <div className='flex flex-row justify-between items-center font-light'>
+      <div className='flex text-sm md:text-base flex-row justify-between items-center font-light'>
         <p>$2,500,000</p>
         <p>+15%</p>
       </div>
@@ -23,7 +23,7 @@ const TopPlatform = () => {
       <div className="w-full bg-gray-200 rounded-full h-2.5 ">
         <div className="bg-[#54c5eb] h-2.5 rounded-full dark:bg-[#54c5eb]" style={{width: "60%"}}></div>
       </div>
-      <div className='flex flex-row justify-between items-center font-light'>
+      <div className='flex text-sm md:text-base flex-row justify-between items-center font-light'>
         <p>$1,800,500</p>
         <p>+10%</p>
       </div>
@@ -33,7 +33,7 @@ const TopPlatform = () => {
       <div className="w-full bg-gray-200 rounded-full h-2.5 ">
         <div className="bg-[#ffb74a] h-2.5 rounded-full dark:bg-[#ffb74a]" style={{width: "45%"}}></div>
       </div>
-      <div className='flex flex-row justify-between items-center font-light'>
+      <div className='flex text-sm md:text-base flex-row justify-between items-center font-light'>
         <p>$1,200,500</p>
         <p>+8%</p>
       </div>
@@ -43,7 +43,7 @@ const TopPlatform = () => {
       <div className="w-full bg-gray-200 rounded-full h-2.5">
         <div className="bg-[#ff4855] h-2.5 rounded-full dark:bg-[#ff4855]" style={{width: "30%"}}></div>
       </div>
-      <div className='flex flex-row justify-between items-center font-light'>
+      <div className='flex text-sm md:text-base flex-row justify-between items-center font-light'>
         <p>$600,000</p>
         <p>+5%</p>
       </div>

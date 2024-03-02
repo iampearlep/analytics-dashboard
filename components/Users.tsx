@@ -9,7 +9,7 @@ import DownloadIcon from '@/public/images/document-download.svg'
 
 const Users = () => {
   return (
-    <div className='bg-white w-full md:h-[450px] rounded-lg border border-[#e2e4e4] '>
+    <div className='bg-white dark:bg-[#1a253b] w-full md:h-[450px] rounded-lg border border-[#e2e4e4] dark:border-[#495260]'>
     <div className='px-4 py-4'>
     <div className='flex flex-row justify-between items-center pb-5'>
         <h2 className='text-base font-semibold'>Last Orders</h2>
@@ -53,7 +53,7 @@ const Users = () => {
                 </td>
                 <td>
                 <button className='flex flex-row items-center gap-x-1 px-6'>
-               <Image src={DownloadIcon} height={10} width={8} alt='' className='w-3 h-3' />
+               <Image src={DownloadIcon} height={10} width={8} alt='' className='w-3 h-3 dark:hidden' />
                     <p className="">View</p>
                </button>
                 </td>
@@ -74,7 +74,7 @@ const Users = () => {
                 </td>
                 <td>
                 <button className='flex flex-row items-center gap-x-1 px-6'>
-               <Image src={DownloadIcon} height={10} width={8} alt='' className='w-3 h-3' />
+               <Image src={DownloadIcon} height={10} width={8} alt='' className='w-3 h-3 dark:hidden' />
                     <p className="">View</p>
                </button>
                 </td>
@@ -95,7 +95,7 @@ const Users = () => {
                 </td>
                 <td >
                 <button className='flex flex-row items-center gap-x-1 px-6'>
-               <Image src={DownloadIcon} height={10} width={8} alt='' className='w-3 h-3' />
+               <Image src={DownloadIcon} height={10} width={8} alt='' className='w-3 h-3 dark:hidden' />
                     <p className="">View</p>
                </button>
                 </td>
@@ -116,7 +116,7 @@ const Users = () => {
                 </td>
                 <td>
                 <button className='flex flex-row items-center gap-x-1 px-6'>
-               <Image src={DownloadIcon} height={10} width={8} alt='' className='w-3 h-3' />
+               <Image src={DownloadIcon} height={10} width={8} alt='' className='w-3 h-3 dark:hidden' />
                     <p className="">View</p>
                </button>
                 </td>
@@ -137,7 +137,7 @@ const Users = () => {
                 </td>
                 <td className="">
                <button className='flex flex-row items-center gap-x-1 px-6'>
-               <Image src={DownloadIcon} height={10} width={8} alt='' className='w-3 h-3' />
+               <Image src={DownloadIcon} height={10} width={8} alt='' className='w-3 h-3 dark:hidden' />
                     <p className="">View</p>
                </button>
                 </td>
