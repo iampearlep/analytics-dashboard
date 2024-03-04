@@ -85,10 +85,10 @@ const Navbar = () => {
              <h5 className='text-sm font-semibold py-1 px-2'>My Account</h5>
              <hr />
             <ul className='py-1 text-xs flex flex-col'>
-               <li className=' hover:bg-[#def7f1] px-2 py-1'>Profile</li>
-               <li className=' hover:bg-[#def7f1] px-2 py-1'>Billing</li>
-               <li className=' hover:bg-[#def7f1] px-2 py-1'>Team</li>
-               <li className=' hover:bg-[#def7f1] px-2 py-1'>Subscription</li>
+               <li className=' hover:bg-[#def7f1] dark:hover:bg-[#111827]  px-2 py-1'>Profile</li>
+               <li className=' hover:bg-[#def7f1] dark:hover:bg-[#111827] px-2 py-1'>Billing</li>
+               <li className=' hover:bg-[#def7f1] dark:hover:bg-[#111827] px-2 py-1'>Team</li>
+               <li className=' hover:bg-[#def7f1] dark:hover:bg-[#111827] px-2 py-1'>Subscription</li>
              </ul>
             </div>
            </div>
