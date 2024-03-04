@@ -148,8 +148,8 @@ const Users = () => {
             </tr>
             <tr className="border-b">
                 <th scope="row" className="flex flex-row items-center gap-x-2 pl-2 pr-4 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                     <Image src={ProfileImg5} height={10} width={8} alt='' className='w-6 h-6' />
-                      <h4>Phillip Lubin</h4> 
+                     <Image src={ProfileImg1} height={10} width={8} alt='' className='w-6 h-6' />
+                      <h4>Sheldon Cooper</h4> 
                 </th>
                 <td className="text-[#958d89] px-6 py-4">
                 Nov 13, 2023
@@ -157,8 +157,8 @@ const Users = () => {
                 <td className="px-6 py-4">
                 $80,000
                 </td>
-                <td className="px-6 py-4 text-[#56cdb6]">
-                Paid
+                <td className="px-6 py-4 text-[#ff4855]">
+                Refund
                 </td>
                 <td className="">
                <button className='flex flex-row items-center gap-x-1 px-6'>
@@ -169,8 +169,8 @@ const Users = () => {
             </tr>
             <tr className="border-b">
                 <th scope="row" className="flex flex-row items-center gap-x-2 pl-2 pr-4 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                     <Image src={ProfileImg5} height={10} width={8} alt='' className='w-6 h-6' />
-                      <h4>Phillip Lubin</h4> 
+                     <Image src={ProfileImg3} height={10} width={8} alt='' className='w-6 h-6' />
+                      <h4>Harvey Scott</h4> 
                 </th>
                 <td className="text-[#958d89] px-6 py-4">
                 Nov 13, 2023
